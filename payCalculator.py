@@ -6,6 +6,7 @@ def calculatePay():
     overtime_hours = 0
     if hrs > 40:
         overtime_hours = hrs - 40
+        hrs = hrs - overtime_hours
     pay = (hrs * rate) + (overtime_hours * (rate * 1.5))
     print("Pay: {}".format(pay))
     # end assignment
@@ -14,4 +15,4 @@ def calculatePay():
 ## uncomment calculatePay() and run > python payCalculator.py
 ## ***IMPORTANT*** please recomment before you submit/sync your assignment.
 ## OR YOUR TEST WILL NOT RUN
-# calculatePay()
+calculatePay()
