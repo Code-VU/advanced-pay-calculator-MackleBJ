@@ -5,20 +5,18 @@ def calculatePay():
         hrs = float(input("Enter Hours: "))
     except:
         print("Error, please enter a numeric input")
-        exit()
 
     try:
         rate = float(input("Enter Rate: "))
     except:
         print("Error, please enter a numeric input")
-        exit()
 
     overtime_hours = 0
 
     if hrs > 40:
         overtime_hours = hrs - 40
         hrs = hrs - overtime_hours
-        
+
     pay = (hrs * rate) + (overtime_hours * (rate * 1.5))
     print("Pay: {}".format(pay))
     # end assignment
