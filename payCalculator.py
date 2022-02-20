@@ -12,9 +12,9 @@ def calculatePay():
 
         pay = (hrs * rate) + (overtime_hours * (rate * 1.5))
         print("Pay: {}".format(pay))
-        
+
     except:
-        print("Error, please enter a numeric input")
+        print("Error, please enter numeric input")
     # end assignment
 
 ## if you want to test locally before you try to sync
